@@ -1,0 +1,193 @@
+body {
+  padding-bottom: 500px;
+}
+
+h2 {
+  color: purple;
+}
+
+/* Continue your CSS rules here */
+
+/* 8 - background */
+.background {
+  background-color: lightblue;
+}
+
+/* 9 - Dois elementos, uma regra */
+.title-small, p {
+  font-size: 14px;
+}
+
+/* 10 - background image */
+.background-image {
+  background-image: url('path/to/image.jpg');
+  height: 100px;
+  width: 100px;
+}
+
+/* 11 - Largura e altura */
+#widht-height {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+/* 12 - padding */
+#padding {
+  padding: 20px;
+  background-color: green;
+}
+
+/* 13 - border */
+#border {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+/* 14 - raio de borda */
+#border-radius {
+  border-radius: 15px;
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+/* 15 - cores */
+#hex {
+  background-color: #ff0000;
+  width: 100px;
+  height: 100px;
+}
+
+#rgb {
+  background-color: rgb(0, 255, 0);
+  width: 100px;
+  height: 100px;
+}
+
+#hsl {
+  background-color: hsl(240, 100%, 50%);
+  width: 100px;
+  height: 100px;
+}
+
+/* 15 - Alinhamento de texto */
+#center {
+  text-align: center;
+}
+
+/* 16 - decoration */
+#underline {
+  text-decoration: underline;
+}
+
+#line {
+  text-decoration: line-through;
+}
+
+#sem-underline {
+  text-decoration: none;
+}
+
+/* 17 - font size */
+#fonte-pequena {
+  font-size: 12px;
+}
+
+/* 18 - transform */
+#lower {
+  text-transform: lowercase;
+}
+
+#upper {
+  text-transform: uppercase;
+}
+
+/* 19 - alteração de fonte */
+#serif {
+  font-family: serif;
+}
+
+#sans-serif {
+  font-family: sans-serif;
+}
+
+#cursive {
+  font-family: cursive;
+}
+
+/* 20 - display */
+/* 21 - se o elemento é o de bloco ou não */
+.inline {
+  display: inline;
+  background-color: lightgrey;
+  width: 50px;
+  height: 50px;
+}
+
+.block {
+  display: block;
+  background-color: lightcoral;
+  width: 50px;
+  height: 50px;
+}
+
+/* 21 - ocultando elementos */
+#none {
+  display: none;
+}
+
+/* 22 - position */
+#relative {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background-color: lightblue;
+  width: 100px;
+  height: 100px;
+}
+
+#absolute {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: lightgreen;
+  width: 100px;
+  height: 100px;
+}
+
+#fixed {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  background-color: lightcoral;
+  width: 100px;
+  height: 100px;
+}
+
+/* 23 - relative e absolute */
+#relative-2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: lightgrey;
+}
+
+#absolute-1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: blue;
+  width: 80px;
+  height: 80px;
+}
+
+#absolute-2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: green;
+  width: 80px;
+  height: 80px;
+}
