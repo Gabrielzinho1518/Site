@@ -52,4 +52,160 @@ ul, ol {
     margin: 20px 0;
 }
 
-ul li,
+ul li, ol li {
+    margin: 5px 0;
+}
+
+.text {
+    margin: 10px 0;
+}
+
+.background {
+    background-color: #333;
+    padding: 10px;
+}
+
+#widht-height {
+    width: 100px;
+    height: 100px;
+    background-color: #03DAC6;
+}
+
+#padding {
+    padding: 20px;
+    background-color: #333;
+}
+
+#border {
+    border: 2px solid #03DAC6;
+    padding: 10px;
+}
+
+#border-radius {
+    border: 2px solid #03DAC6;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#hex, #rgb, #hsl {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+#hex {
+    background-color: #BB86FC;
+}
+
+#rgb {
+    background-color: rgb(255, 87, 34);
+}
+
+#hsl {
+    background-color: hsl(120, 100%, 50%);
+}
+
+#center {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+#line {
+    text-decoration: line-through;
+}
+
+#sem-underline {
+    text-decoration: none;
+}
+
+#fonte-pequena {
+    font-size: 0.8em;
+}
+
+#lower {
+    text-transform: lowercase;
+}
+
+#upper {
+    text-transform: uppercase;
+}
+
+#serif {
+    font-family: serif;
+}
+
+#sans-serif {
+    font-family: sans-serif;
+}
+
+#cursive {
+    font-family: cursive;
+}
+
+.inline {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #03DAC6;
+    margin: 5px;
+}
+
+.block {
+    display: block;
+    margin: 10px 0;
+}
+
+#none {
+    display: none;
+}
+
+#relative {
+    position: relative;
+    background-color: #333;
+    padding: 10px;
+}
+
+#absolute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #BB86FC;
+    padding: 10px;
+}
+
+#fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #03DAC6;
+    padding: 10px;
+}
+
+#relative-2 {
+    position: relative;
+    background-color: #333;
+    padding: 10px;
+    height: 200px;
+}
+
+#absolute-1, #absolute-2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #BB86FC;
+}
+
+#absolute-1 {
+    top: 10px;
+    left: 10px;
+}
+
+#absolute-2 {
+    bottom: 10px;
+    right: 10px;
+}
