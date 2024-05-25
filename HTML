@@ -1,152 +1,347 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>HTML e CSS</title>
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
-    <body>
-        <h1>Bem vindo!!!</h1>
-        <p style="color: black">Olá, como ta meu Rei?</p>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML e CSS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: Arial, sans-serif;
+            padding-bottom: 500px;
+            margin: 0;
+            padding: 20px;
+        }
 
-        <a href="https://www.google.com">Acessar o Google</a>
-        <hr />
-        <br />
-        <hr />
+        h1, h2, h3 {
+            color: #BB86FC;
+        }
 
-        <img src="img/Suarez.png" alt="Luisito Suarez" />
-        <hr>
+        p {
+            color: #E0E0E0;
+        }
 
-        <!-- Meu primeiro comentário -->
+        a {
+            color: #03DAC6;
+            text-decoration: none;
+        }
 
-        <!-- 2 - Div -->
-        <div>
-            <h3>Produto X</h3>
-            <p>R$ 50,00 </p>
-            <a href="#">Comprar</a>
-        </div>
-        <hr/>
+        a:hover {
+            text-decoration: underline;
+        }
 
-        <!-- 13 - Tabelas -->
-        <table>
-            <thead>
-                <tr>
-                    <th>ID:</th>
-                    <th>Nome:</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Gabrielzinho</td>
-                </tr>
-            </tbody>
-        </table>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
 
-        <!-- 3- Listas -->
-        <ul>
-            <li>Banana</li>
-            <li>laranjas</li>
-            <li>maças</li>
-        </ul>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
 
-        <ol>
-            <li>Estudar HTML</li>
-            <li>Estudar CSS</li>
-        </ol>
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
 
-        <!-- 4 - Elementos de bloco e inline -->
-        <p>Parágrafo</p>
-        <p>é de bloco</p>
-        <span>Na mesma </span>
-        <span>Linha</span>
+        th {
+            background-color: #333;
+        }
 
-        <p>Clique neste <a href="#">Link</a></p>
+        tr:nth-child(even) {
+            background-color: #222;
+        }
 
-        <!-- 5 - Integração com o CSS -->
-        <h1>Testando integração</h1>
+        ul, ol {
+            margin: 20px 0;
+        }
 
-        <!-- 6 - id -->
-        <h3 id="title">Meu titulo</h3>
-        <h3>Meu segundo titulo</h3>
+        ul li, ol li {
+            margin: 5px 0;
+        }
 
-        <!-- 7 - classes -->
-        <p class="text">Meu parágrafo</p>
-        <p class="text">Meu segundo parágrafo</p>
+        .text {
+            margin: 10px 0;
+        }
 
-        <!-- 8 - background -->
-        <p class="background">Mude o meu background</p>
+        .background {
+            background-color: #333;
+            padding: 10px;
+        }
 
-        <!-- 9 - Dois elementos, uma regra -->
-        <p>Meu texto</p>
-        <p class="title-small">Um texto do site</p>
+        #widht-height {
+            width: 100px;
+            height: 100px;
+            background-color: #03DAC6;
+        }
 
-        <!-- 10 - background image -->
-        <h3 class="background-image">Testando a imagem de background</h3>
+        #padding {
+            padding: 20px;
+            background-color: #333;
+        }
 
-        <!-- 11 - Largura e altura -->
-        <div id="widht-height"></div>
+        #border {
+            border: 2px solid #03DAC6;
+            padding: 10px;
+        }
 
-        <!-- 12 - padding -->
-        <div id="padding">Testando padding</div>
+        #border-radius {
+            border: 2px solid #03DAC6;
+            border-radius: 10px;
+            padding: 10px;
+        }
 
-        <!-- 13 - border -->
-        <div id="border">testando borda</div>
+        #hex, #rgb, #hsl {
+            width: 50px;
+            height: 50px;
+            margin: 10px 0;
+        }
 
-        <!-- 14 - raio de borda -->
-        <div id="border-radius">Testando o raio da borda</div>
+        #hex {
+            background-color: #BB86FC;
+        }
 
-        <!-- 15 - cores -->
-        <div id="hex"></div>
-        <div id="rgb"></div>
-        <div id="hsl"></div>
+        #rgb {
+            background-color: rgb(255, 87, 34);
+        }
 
-        <!-- 15 - Alinhamento de texto -->
-        <div id="center">
-            <p>Alinhando o texto</p>
-        </div>
+        #hsl {
+            background-color: hsl(120, 100%, 50%);
+        }
 
-        <!-- 16 - decoration -->
-        <p id="underline">texto com underline</p>
-        <p id="line">linha do texto</p>
-        <a id="sem-underline" href="#">link</a>
+        #center {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+        }
 
-        <!-- 17 - font sizez -->
-        <h2 id="fonte-pequena">Meu titulo pequeno</h2>
+        #underline {
+            text-decoration: underline;
+        }
 
-        <!-- 18 - transform -->
-        <p id="lower">Todo em caixa baixa</p>
-        <p id="upper">todo em caixa alta</p>
+        #line {
+            text-decoration: line-through;
+        }
 
-        <!-- 19 - alteração de fonte -->
-        <p id="serif">Exemplo de fonte serifada</p>
-        <p id="sans-serif">Exemplo de fonte sem serifa</p>
-        <p id="cursive">Exemplo de fonte cursiva</p>
+        #sem-underline {
+            text-decoration: none;
+        }
 
-        <!-- 20 - display -->
-        <!-- 21 - se o elemento é o de bloco ou não -->
-        <div class="inline"></div>
-        <div class="inline"></div>
-        <div class="inline"></div>
+        #fonte-pequena {
+            font-size: 0.8em;
+        }
 
-        <span class="block">A</span>
-        <span class="block">B</span>
-        <span class="block">C</span>
+        #lower {
+            text-transform: lowercase;
+        }
 
-        <!-- 21 - ocultando elementos -->
-        <p id="none">estou invisível</p>
+        #upper {
+            text-transform: uppercase;
+        }
 
-        <!-- 22 - position -->
-        <div id="relative"></div>
-        <p>relativo ficou na frente</p>
+        #serif {
+            font-family: serif;
+        }
 
-        <div id="absolute"></div>
+        #sans-serif {
+            font-family: sans-serif;
+        }
 
-        <div id="fixed"></div>
+        #cursive {
+            font-family: cursive;
+        }
 
-        <!-- 23 - relative e absolute -->
-        <div id="relative-2">
-            <div id="absolute-1"></div>
-            <div id="absolute-2"></div>
-        </div>
-    </body>
-</html>
+        .inline {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #03DAC6;
+            margin: 5px;
+        }
+
+        .block {
+            display: block;
+            margin: 10px 0;
+        }
+
+        #none {
+            display: none;
+        }
+
+        #relative {
+            position: relative;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        #absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: #BB86FC;
+            padding: 10px;
+        }
+
+        #fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #03DAC6;
+            padding: 10px;
+        }
+
+        #relative-2 {
+            position: relative;
+            background-color: #333;
+            padding: 10px;
+            height: 200px;
+        }
+
+        #absolute-1, #absolute-2 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #BB86FC;
+        }
+
+        #absolute-1 {
+            top: 10px;
+            left: 10px;
+        }
+
+        #absolute-2 {
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem vindo!!!</h1>
+    <p>Olá, como ta meu Rei?</p>
+
+    <a href="https://www.google.com">Acessar o Google</a>
+    <hr />
+    <br />
+    <hr />
+
+    <img src="img/Suarez.png" alt="Luisito Suarez" />
+    <hr>
+
+    <!-- Meu primeiro comentário -->
+
+    <!-- 2 - Div -->
+    <div>
+        <h3>Produto X</h3>
+        <p>R$ 50,00 </p>
+        <a href="#">Comprar</a>
+    </div>
+    <hr/>
+
+    <!-- 13 - Tabelas -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID:</th>
+                <th>Nome:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Gabrielzinho</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 3- Listas -->
+    <ul>
+        <li>Banana</li>
+        <li>Laranjas</li>
+        <li>Maçãs</li>
+    </ul>
+
+    <ol>
+        <li> Estudar HTML </li>
+        <li> Estudar CSS </li>
+    </ol>
+
+    <!-- 4 - Elementos de bloco e inline -->
+    <p>Parágrafo</p>
+    <p>é de bloco</p>
+    <span>Na mesma </span>
+    <span>linha</span>
+
+    <p>Clique neste <a href="#">Link</a></p>
+
+    <!-- 5 - Integração com o CSS -->
+    <h1>Testando integração</h1>
+
+    <!--  6 - id -->
+    <h3 id="title">Meu titulo</h3>
+    <h3>Meu segundo titulo</h3>
+
+    <!-- 7 - classes -->
+    <p class="text">Meu parágrafo</p>
+    <p class="text">Meu segundo parágrafo</p>
+
+    <!-- 8 - background -->
+    <p class="background">Mude o meu background</p>
+
+    <!-- 9 - Dois elementos, uma regra -->
+    <p>Meu texto</p>
+    <p class="title-small">Um texto do site</p>
+
+    <!-- 10 - background image -->
+    <h3 class="background-image">Testando a imagem de background</h3>
+
+    <!-- 11 - Largura e altura -->
+    <div id="widht-height"></div>
+
+    <!-- 12 - padding -->
+    <div id="padding">Testando padding</div>
+
+    <!-- 13 - border -->
+    <div id="border">testando borda</div>
+
+    <!-- 14 - raio de borda -->
+    <div id="border-radius">Testando o raio da borda</div>
+
+    <!-- 15 - cores -->
+    <div id="hex"></div>
+    <div id="rgb"></div>
+    <div id="hsl"></div>
+
+    <!-- 15 - Alinhamento de texto -->
+    <div id="center">
+        <p>Alinhando o texto</p>
+    </div>
+
+    <!-- 16 - decoration -->
+    <p id="underline">texto com underline</p>
+    <p id="line">linha do texto</p>
+    <a id="sem-underline" href="#">link</a>
+
+    <!-- 17 - font sizez -->
+    <h2 id="fonte-pequena">Meu titulo pequeno</h2>
+
+    <!-- 18 - transform -->
+    <p id="lower">Todo em caixa baixa</p>
+    <p id="upper">todo em caixa alta</p>
+
+    <!-- 19 - alteração de fonte -->
+    <p id="serif">Exemplo de fonte serifada</p>
+    <p id="sans-serif">Exemplo de fonte sem serifa</p>
+    <p id="cursive">Exemplo de fonte cursiva</p>
+
+    <!-- 20 - display -->
+    <!-- 21 - se o elemento é o de bloco ou não -->
+    <div class="inline"></div>
+    <div class="inline"></div>
+    <div class="inline"></div>
+
+    <span class="block">A</span>
