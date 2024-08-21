@@ -1,2 +1,2 @@
 # Site
-Estudando HTML e CSS
+Estudando HTML, CSS e JavaScript
